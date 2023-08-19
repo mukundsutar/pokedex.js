@@ -22,8 +22,8 @@ window.onload = async function () {
         document.getElementById("pokemon-list").append(pokemon);
     }
 
-    document.getElementById("pokemon-description").innerText =
-        pokedex[1]["desc"];
+    // document.getElementById("pokemon-description").innerText =
+    //     pokedex[1]["desc"];
 
     console.log(pokedex);
 };
