@@ -5,7 +5,7 @@
 
 
 body {
-    background: url("./pokemon-bg.jpg") no-repeat;
+    background: url("./img/pokemon-bg.jpg") no-repeat;
     background-size: cover;
     font-family: "PokemonFireRed";
                                                 
@@ -24,7 +24,7 @@ body {
     /* justify-content: space-around; */
     align-items: center;
 
-    background: url("./pokedex-frame-2.png") no-repeat;
+    background: url("./img/pokedex-frame-2.png") no-repeat;
     background-size: cover;
 
 }
