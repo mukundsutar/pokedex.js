@@ -8,7 +8,7 @@ body {
     background: url("./img/pokemon-bg.jpg") no-repeat;
     background-size: cover;
     font-family: "PokemonFireRed";
-    text-shadow: 1px 1px #c0b088;            
+    text-shadow: 1px 1px #c0b088;
 }
 
 #content-box {
@@ -64,7 +64,7 @@ body {
     width: 139px;
     height: 139px;
     border: 5px solid #706880;
-  box-shadow: 1px 1px 5px #888888;
+    box-shadow: 1px 1px 5px #888888;
     border-radius: 2px;
     margin-top: 20px;
     background-color: white;
@@ -76,15 +76,15 @@ body {
 }
 
 @keyframes myAnim {
-	0% {
-		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-		transform: scale(1);
-	}
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        transform: scale(1);
+    }
 
-	100% {
-		box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-		transform: scale(1.5);
-	}
+    100% {
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+        transform: scale(1.5);
+    }
 }
 
 #pokemon-types {
@@ -103,7 +103,7 @@ body {
     height: 100px;
     background-color: white;
     border: 5px solid #706880;
-  box-shadow: 1px 1px 5px #888888;
+    box-shadow: 1px 1px 5px #888888;
     border-radius: 10px;
 
     margin: 0 auto;
