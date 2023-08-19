@@ -8,7 +8,7 @@ body {
     background: url("./img/pokemon-bg.jpg") no-repeat;
     background-size: cover;
     font-family: "PokemonFireRed";
-                                                
+    text-shadow: 1px 1px #c0b088;            
 }
 
 #content-box {
@@ -36,7 +36,7 @@ body {
     margin-top: 17px;
     margin-left: 29px;
 
-    /* background-color: cyan; */
+    /* background-color: #f0f4f4; */
     text-align: center;
 }
 
