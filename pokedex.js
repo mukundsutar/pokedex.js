@@ -10,12 +10,13 @@ window.onload = async function () {
         pokemon.id = i;
 
         if (i <= 99) {
-            pokemon.innerText = "No0" + i.toString() + " " + pokedex[i]["name"].toUpperCase();
+            pokemon.innerText =
+                "No0" + i.toString() + " " + pokedex[i]["name"].toUpperCase();
         } else {
-            pokemon.innerText = "No" + i.toString() + " " + pokedex[i]["name"].toUpperCase();
+            pokemon.innerText =
+                "No" + i.toString() + " " + pokedex[i]["name"].toUpperCase();
         }
 
-        
         pokemon.classList.add("pokemon-name");
         pokemon.addEventListener("click", updatePokemon);
         document.getElementById("pokemon-list").append(pokemon);
@@ -44,7 +45,7 @@ async function getPokemon(num) {
     console.log(pokemonDesc);
     pokemonDesc = pokemonDesc["flavor_text_entries"][9]["flavor_text"];
 
-    pokemonDesc = pokemonDesc.replace("\n", "");
+    pokemonDesc = pokemonDesc.replace("\n", " ");
     test = pokemonDesc.replace("\u000c", "");
     console.log(test);
 
