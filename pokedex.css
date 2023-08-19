@@ -41,11 +41,11 @@ body {
 }
 
 #pokemon-list {
-    width: 302px;
-    height: 376px;
+    width: 299px;
+    height: 374px;
 
-    margin-top: 89px;
-    margin-left: 102px;
+    margin-top: 91px;
+    margin-left: 104px;
 
     /* background-color: yellow; */
     font-size: 18px;
@@ -56,8 +56,8 @@ body {
     border: 1px solid black;
     border-radius: 10px;
     background-color: white;
-    margin: 5px;
-    padding: 5px;
+    margin: 12px;
+    padding: 6px;
 }
 
 #pokemon-info img {
