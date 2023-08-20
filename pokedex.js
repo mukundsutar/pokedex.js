@@ -79,12 +79,8 @@ function updatePokemon() {
 
     //clear previous type
     let typesDiv = document.getElementById("pokemon-types");
-    let statNameDiv = document.getElementById("statName");
     while (typesDiv.firstChild) {
         typesDiv.firstChild.remove();
-    }
-    while (statNameDiv.firstChild) {
-        statNameDiv.firstChild.remove();
     }
 
     //update types
@@ -98,7 +94,8 @@ function updatePokemon() {
     }
 
     //update overview
-    document.getElementById("statName").innerText= pokedex[this.id]["name"].toUpperCase();
+    document.getElementById("statName").innerText =
+        pokedex[this.id]["name"].toUpperCase();
     document.getElementById("height").innerText =
         "HT " + pokedex[this.id]["height"] + "cm";
     document.getElementById("weight").innerText =
