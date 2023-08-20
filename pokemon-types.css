@@ -1,10 +1,10 @@
 .normal {
-    background-color: beige;
+    background-color: #a8a878;
     color: black;
 }
 
 .fire {
-    background-color: orange;
+    background-color: #f08030;
     color: white;
 }
 
@@ -14,7 +14,7 @@
 }
 
 .water {
-    background-color: blue;
+    background-color: #6890f0;
     color: white;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .fighting {
-    background-color: darkred;
+    background-color: #c03028;
     color: white;
 }
 
@@ -44,7 +44,7 @@
 }
 
 .ghost {
-    background-color: purple;
+    background-color: #705898;
     color: white;
 }
 
@@ -79,11 +79,11 @@
 }
 
 .dragon {
-    background-color: teal;
+    background-color: #7038f8;
     color: white;
 }
 
 .poison {
-    background-color: darkviolet;
+    background-color: #a040a0;
     color: white;
 }

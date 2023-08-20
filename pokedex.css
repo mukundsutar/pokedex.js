@@ -59,6 +59,41 @@ body {
     background-color: white;
     margin: 12px;
     padding: 7px;
+
+    
+    border: 5px solid #706880;
+    box-shadow: 1px 1px 5px #888888;
+
+}
+
+.pokemon-name:hover{
+    animation: vibrate 0.5s ease 0s 1 normal forwards;
+}
+
+@keyframes vibrate {
+	0% {
+		transform: translate(0);
+	}
+
+	20% {
+		transform: translate(2px, -2px);
+	}
+
+	40% {
+		transform: translate(2px, 2px);
+	}
+
+	60% {
+		transform: translate(-2px, 2px);
+	}
+
+	80% {
+		transform: translate(-2px, -2px);
+	}
+
+	100% {
+		transform: translate(0);
+	}
 }
 
 #pokemon-info img {
@@ -67,7 +102,7 @@ body {
     border: 5px solid #706880;
     box-shadow: 1px 1px 5px #888888;
     border-radius: 2px;
-    margin-top: 20px;
+    margin-top: 16px;
     background-color: white;
 }
 
