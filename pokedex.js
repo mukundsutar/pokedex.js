@@ -1,4 +1,6 @@
 const pokemonCount = 151;
+const TAB = "\t";
+
 var pokedex = {}; // {1 : {"name" : "bulbsaur", "img" : url, "type" : ["grass", "poison"], "desc" : "...."} }
 
 window.onload = async function () {
@@ -9,7 +11,10 @@ window.onload = async function () {
         let pokemon = document.createElement("div");
         pokemon.id = i;
 
-        if (i <= 99) {
+        if (i <= 9) {
+            pokemon.innerText =
+                "No00" + i.toString() + " " + pokedex[i]["name"].toUpperCase();
+        } else if (i <= 99) {
             pokemon.innerText =
                 "No0" + i.toString() + " " + pokedex[i]["name"].toUpperCase();
         } else {
@@ -31,9 +36,14 @@ window.onload = async function () {
 async function getPokemon(num) {
     let url = "https://pokeapi.co/api/v2/pokemon/" + num.toString();
 
+    // let url_2 = "https://pokeapi.co/api/v2/characteristic/" + num.toString();
+
     let res = await fetch(url);
     let pokemon = await res.json();
-    // console.log(pokemon);
+
+    // let result = await fetch(url_2);
+    // let character = await result.json();
+    // console.log(character);
 
     let pokemonName = pokemon["name"];
     let pokemonType = pokemon["types"];
@@ -42,18 +52,25 @@ async function getPokemon(num) {
     res = await fetch(pokemon["species"]["url"]);
     let pokemonDesc = await res.json();
 
-    console.log(pokemonDesc);
+    // console.log(pokemonDesc);
     pokemonDesc = pokemonDesc["flavor_text_entries"][9]["flavor_text"];
 
     pokemonDesc = pokemonDesc.replace("\n", " ");
-    test = pokemonDesc.replace("\u000c", "");
-    console.log(test);
+    pokemonDesc = pokemonDesc.replace("\u000c", "");
+    // console.log(pokemonDesc);
+
+    let pokemonHeight = pokemon["height"];
+    pokemonHeight = pokemonHeight * 10;
+    let pokemonWeight = pokemon["weight"];
+    pokemonWeight = pokemonWeight / 10;
 
     pokedex[num] = {
         name: pokemonName,
         img: pokemonImg,
         types: pokemonType,
         desc: pokemonDesc,
+        height: pokemonHeight,
+        weight: pokemonWeight,
     };
 }
 
@@ -62,8 +79,12 @@ function updatePokemon() {
 
     //clear previous type
     let typesDiv = document.getElementById("pokemon-types");
+    let statNameDiv = document.getElementById("statName");
     while (typesDiv.firstChild) {
         typesDiv.firstChild.remove();
+    }
+    while (statNameDiv.firstChild) {
+        statNameDiv.firstChild.remove();
     }
 
     //update types
@@ -75,6 +96,13 @@ function updatePokemon() {
         type.classList.add(types[i]["type"]["name"]); //adds background color and font color
         typesDiv.append(type);
     }
+
+    //update overview
+    document.getElementById("statName").innerText= pokedex[this.id]["name"].toUpperCase();
+    document.getElementById("height").innerText =
+        "HT " + pokedex[this.id]["height"] + "cm";
+    document.getElementById("weight").innerText =
+        "WT " + pokedex[this.id]["weight"] + "kg";
 
     //update description
     document.getElementById("pokemon-description").innerText =

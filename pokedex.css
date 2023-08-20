@@ -63,7 +63,6 @@ body {
     
     border: 5px solid #706880;
     box-shadow: 1px 1px 5px #888888;
-
 }
 
 .pokemon-name:hover{
@@ -149,4 +148,8 @@ body {
     text-align: left;
     padding: 10px;
     overflow-y: auto;
+}
+
+.overview{
+    font-size: 18px;
 }

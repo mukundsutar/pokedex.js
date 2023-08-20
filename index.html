@@ -8,17 +8,34 @@
 
     <link rel="stylesheet" href="pokedex.css">
     <link rel="stylesheet" href="pokemon-types.css">
+    <link rel="stylesheet" href="test.css">
 </head>
 
 <body>
     <div id="content-box">
         <!-- Left Side, display pokemon info -->
         <div id="pokemon-info">
-            <img id="pokemon-img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png">
+            <div class="overview">
+                <div id="stats">
+                    <div id="statName">
+                        BULBASAUR
+                    </div>
+                    <br>
+                    <div id="height">
+                        HT 70cm
+                    </div>
+                    <div id="weight">
+                        WT 6.9kg
+                    </div>
+                </div>
+                <img id="pokemon-img"
+                    src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png">
+            </div>
             <div id="pokemon-types">
                 <span class="type-box grass">GRASS</span><span class="type-box poison">POISON</span>
             </div>
-            <div id="pokemon-description">There is a plant seed on its back right from the day this POKéMON is born. The seed slowly grows larger.</div>
+            <div id="pokemon-description">There is a plant seed on its back right from the day this POKéMON is born. The
+                seed slowly grows larger.</div>
         </div>
 
         <!-- Right side, display pokemon list -->

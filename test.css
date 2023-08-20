@@ -1,0 +1,13 @@
+.overview{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+#pokemon-info img{
+    /* margin-left: 20px; */
+}
+
+#stats{
+    padding-top: 58px;
+}
