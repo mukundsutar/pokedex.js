@@ -1,5 +1,4 @@
 const pokemonCount = 151;
-const TAB = "\t";
 
 var pokedex = {}; // {1 : {"name" : "bulbsaur", "img" : url, "type" : ["grass", "poison"], "desc" : "...."} }
 
